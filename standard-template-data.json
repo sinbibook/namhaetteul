@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.40.0",
-    "generatedAt": "2026-09-08T12:55:56.354756736Z",
+    "version": "1.41.0",
+    "generatedAt": "2026-09-08T13:02:56.291634751Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -1181,7 +1181,7 @@
                     "id": "777ff2d8-0cd9-4b3d-b95d-3826319ed59b",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788869147164-g64jx8s75o.jpg",
                     "sortOrder": 1,
-                    "description": "",
+                    "description": "힐링 오션뷰",
                     "isSelected": true,
                     "blockId": null
                   },
