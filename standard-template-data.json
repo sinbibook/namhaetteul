@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.13.0",
-    "generatedAt": "2026-09-08T09:26:02.774671148Z",
+    "version": "1.14.0",
+    "generatedAt": "2026-09-08T09:30:29.662849822Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -1144,7 +1144,7 @@
       "title": "",
       "description": "",
       "keywords": "",
-      "naverSiteVerification": "",
+      "naverSiteVerification": "43fb15c021f351b224507f4ff76f79a6283d58ec",
       "googleSiteVerification": ""
     },
     "socialLinks": {
