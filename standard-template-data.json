@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.30.0",
-    "generatedAt": "2026-09-08T11:28:23.631263647Z",
+    "version": "1.31.0",
+    "generatedAt": "2026-09-08T11:59:28.847627673Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -1165,7 +1165,7 @@
                     "id": "355aadb5-6ead-40e5-b53e-8185ad8d9862",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858251989-tb08zz8qgb.jpg",
                     "sortOrder": 0,
-                    "description": "",
+                    "description": "온전한 휴식",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -1173,7 +1173,7 @@
                     "id": "c14dd9e0-7070-4d9a-bd95-b33e0eeca048",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788862361355-j732gjom45.jpg",
                     "sortOrder": 1,
-                    "description": "",
+                    "description": "힐링 오션뷰",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -1181,7 +1181,7 @@
                     "id": "55f6ac87-c49d-4932-ab27-d2a6f9b00279",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858251979-qjjjc32a9g.jpg",
                     "sortOrder": 2,
-                    "description": "",
+                    "description": "프라이빗 풀빌라",
                     "isSelected": true,
                     "blockId": null
                   },
