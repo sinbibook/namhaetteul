@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.33.0",
-    "generatedAt": "2026-09-08T12:03:22.629290593Z",
+    "version": "1.34.0",
+    "generatedAt": "2026-09-08T12:05:50.637565678Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -1170,10 +1170,10 @@
                     "blockId": null
                   },
                   {
-                    "id": "c14dd9e0-7070-4d9a-bd95-b33e0eeca048",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788862361355-j732gjom45.jpg",
+                    "id": "777ff2d8-0cd9-4b3d-b95d-3826319ed59b",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788869147164-g64jx8s75o.jpg",
                     "sortOrder": 1,
-                    "description": "힐링 오션뷰",
+                    "description": "",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -1186,24 +1186,24 @@
                     "blockId": null
                   },
                   {
-                    "id": "f3eb8528-30ee-445a-aab5-9cd12c3298eb",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858251785-fiwtschf9e.jpg",
+                    "id": "3a6061b1-9fc6-45cd-be19-fc9d1b4dcc5b",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858251879-fwh9ornpsy.jpg",
                     "sortOrder": 3,
                     "description": "",
                     "isSelected": true,
                     "blockId": null
                   },
                   {
-                    "id": "f40f8ba6-dbb3-40a9-ad61-89aee51b7b86",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858250775-u3kazv2x3t.jpg",
+                    "id": "c14dd9e0-7070-4d9a-bd95-b33e0eeca048",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788862361355-j732gjom45.jpg",
                     "sortOrder": 4,
-                    "description": "",
+                    "description": "힐링 오션뷰",
                     "isSelected": true,
                     "blockId": null
                   },
                   {
-                    "id": "dcaeae0b-91ff-4618-95bb-fc7c443628cc",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858251593-gig8ou85l8.jpg",
+                    "id": "f40f8ba6-dbb3-40a9-ad61-89aee51b7b86",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858250775-u3kazv2x3t.jpg",
                     "sortOrder": 5,
                     "description": "",
                     "isSelected": true,
@@ -1218,17 +1218,9 @@
                     "blockId": null
                   },
                   {
-                    "id": "3a6061b1-9fc6-45cd-be19-fc9d1b4dcc5b",
-                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858251879-fwh9ornpsy.jpg",
-                    "sortOrder": 7,
-                    "description": "",
-                    "isSelected": true,
-                    "blockId": null
-                  },
-                  {
                     "id": "f754bf94-573d-461d-820f-2de36329de3b",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858251884-ya47cc6oq9.jpg",
-                    "sortOrder": 8,
+                    "sortOrder": 7,
                     "description": "",
                     "isSelected": true,
                     "blockId": null
@@ -1236,7 +1228,7 @@
                   {
                     "id": "f655db8e-0334-4aee-b7c5-1a56c0d8bc32",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/index_hero/1788858251682-l5ci9i8660.jpg",
-                    "sortOrder": 9,
+                    "sortOrder": 8,
                     "description": "",
                     "isSelected": true,
                     "blockId": null
