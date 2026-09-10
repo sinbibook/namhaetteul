@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.47.0",
-    "generatedAt": "2026-09-10T06:56:36.165184153Z",
+    "version": "1.48.0",
+    "generatedAt": "2026-09-10T06:59:17.918447875Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -1407,7 +1407,79 @@
                 ],
                 "description": ""
               },
-              "about": [ ]
+              "about": [
+                {
+                  "title": "햇살과 바람이 쉬어가는 곳",
+                  "images": [
+                    {
+                      "id": "c631196a-983f-4ea9-a605-95d895c59644",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555883-0m2khuz8uk.jpg",
+                      "sortOrder": 6,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
+                    },
+                    {
+                      "id": "94699372-f356-46cf-b259-25f731f4ee91",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555883-48ldw1q4pz.jpg",
+                      "sortOrder": 7,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
+                    },
+                    {
+                      "id": "c600b249-113a-4e13-805f-3edfa7d49276",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555884-u06a41qydq.jpg",
+                      "sortOrder": 8,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
+                    },
+                    {
+                      "id": "57bf2071-8d7a-48e8-8b72-50f9b6fc504e",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555884-c19y3h8l76.jpg",
+                      "sortOrder": 9,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
+                    },
+                    {
+                      "id": "a2b86244-971f-47bb-a053-889d4463e1a6",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555884-4hjwh7d0jr.jpg",
+                      "sortOrder": 10,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
+                    },
+                    {
+                      "id": "4df625b1-26a4-47d1-aaf0-8649042ef26a",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555885-may6fenvir.jpg",
+                      "sortOrder": 11,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
+                    },
+                    {
+                      "id": "e97f0937-8d93-496a-b26e-f558c4c3c7d2",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555886-bf9ayj2qzy.jpg",
+                      "sortOrder": 12,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
+                    },
+                    {
+                      "id": "9022f887-8e5b-4eb9-8e18-caa5ae6c701e",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555887-qgy8ngsw3f.jpg",
+                      "sortOrder": 13,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
+                    }
+                  ],
+                  "blockId": "a6262419-3186-44a1-b531-995e6504acc8",
+                  "description": ""
+                }
+              ]
             }
           ]
         },
