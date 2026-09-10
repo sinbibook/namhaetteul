@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.51.0",
-    "generatedAt": "2026-09-10T07:17:54.705374365Z",
+    "version": "1.52.0",
+    "generatedAt": "2026-09-10T08:26:17.482451872Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -1526,7 +1526,7 @@
           "sections": [
             {
               "hero": {
-                "title": "",
+                "title": "편안하게 머무는 공간",
                 "images": [
                   {
                     "id": "886caa1f-21e1-4644-9d9d-bc03232b67be",
