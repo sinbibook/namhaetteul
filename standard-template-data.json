@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.49.0",
-    "generatedAt": "2026-09-10T07:00:50.333325807Z",
+    "version": "1.50.0",
+    "generatedAt": "2026-09-10T07:13:31.797452468Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -1312,7 +1312,7 @@
                     "id": "9bf69624-fcf9-4768-a9ab-b309d36d61dd",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_hero/1788858251686-3n60wykrhg.jpg",
                     "sortOrder": 0,
-                    "description": "",
+                    "description": "남해의하루",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -1320,7 +1320,7 @@
                     "id": "84895a8b-9b87-4eec-ad43-3d6523b8c65f",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_hero/1788858251693-49yhvfjvcx.jpg",
                     "sortOrder": 1,
-                    "description": "",
+                    "description": "바다곁여유",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -1328,7 +1328,7 @@
                     "id": "a3180fb4-5401-40cc-927b-b45fc631c92a",
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_hero/1788866838758-t8688la2lo.jpg",
                     "sortOrder": 2,
-                    "description": "",
+                    "description": "여유로운쉼",
                     "isSelected": true,
                     "blockId": null
                   },
@@ -1414,7 +1414,7 @@
                     {
                       "id": "c631196a-983f-4ea9-a605-95d895c59644",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555883-0m2khuz8uk.jpg",
-                      "sortOrder": 6,
+                      "sortOrder": 0,
                       "description": "",
                       "isSelected": true,
                       "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
@@ -1422,7 +1422,7 @@
                     {
                       "id": "94699372-f356-46cf-b259-25f731f4ee91",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555883-48ldw1q4pz.jpg",
-                      "sortOrder": 7,
+                      "sortOrder": 1,
                       "description": "",
                       "isSelected": true,
                       "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
@@ -1430,7 +1430,7 @@
                     {
                       "id": "c600b249-113a-4e13-805f-3edfa7d49276",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555884-u06a41qydq.jpg",
-                      "sortOrder": 8,
+                      "sortOrder": 2,
                       "description": "",
                       "isSelected": true,
                       "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
@@ -1438,7 +1438,7 @@
                     {
                       "id": "57bf2071-8d7a-48e8-8b72-50f9b6fc504e",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555884-c19y3h8l76.jpg",
-                      "sortOrder": 9,
+                      "sortOrder": 3,
                       "description": "",
                       "isSelected": true,
                       "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
@@ -1446,7 +1446,7 @@
                     {
                       "id": "a2b86244-971f-47bb-a053-889d4463e1a6",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555884-4hjwh7d0jr.jpg",
-                      "sortOrder": 10,
+                      "sortOrder": 4,
                       "description": "",
                       "isSelected": true,
                       "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
@@ -1454,7 +1454,7 @@
                     {
                       "id": "4df625b1-26a4-47d1-aaf0-8649042ef26a",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555885-may6fenvir.jpg",
-                      "sortOrder": 11,
+                      "sortOrder": 5,
                       "description": "",
                       "isSelected": true,
                       "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
@@ -1462,7 +1462,7 @@
                     {
                       "id": "e97f0937-8d93-496a-b26e-f558c4c3c7d2",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555886-bf9ayj2qzy.jpg",
-                      "sortOrder": 12,
+                      "sortOrder": 6,
                       "description": "",
                       "isSelected": true,
                       "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
@@ -1470,7 +1470,7 @@
                     {
                       "id": "9022f887-8e5b-4eb9-8e18-caa5ae6c701e",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_about/1789023555887-qgy8ngsw3f.jpg",
-                      "sortOrder": 13,
+                      "sortOrder": 7,
                       "description": "",
                       "isSelected": true,
                       "blockId": "a6262419-3186-44a1-b531-995e6504acc8"
