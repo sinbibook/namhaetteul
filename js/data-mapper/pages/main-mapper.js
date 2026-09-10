@@ -115,30 +115,40 @@ var MainMapper = {
                    data.homepage.customFields.pages.main &&
                    data.homepage.customFields.pages.main.sections;
 
-    if (!sections || !sections[0] || !sections[0].about) return;
+    if (!sections || !sections[0]) return;
 
-    var aboutArray = sections[0].about;
+    var aboutArray = sections[0].about || [];
     // 태그 소스: 백오피스가 about 이미지 description은 안 보내고 hero 이미지 description만 보내므로,
     // index con2와 동일하게 hero.images description을 태그로 사용한다.
     var heroImages = (sections[0].hero && sections[0].hero.images) || [];
-    var con2Template = document.querySelector('.con2');
-    if (!con2Template) return;
 
-    var container = con2Template.parentElement;
-    var templateHtml = con2Template.outerHTML;
-    var con5 = document.querySelector('.con5');  // con5 위치 저장
-
-    // 기존 동적 con2들 모두 제거 (data-con2-dynamic 속성이 있는 것들)
-    var existingCon2s = container.querySelectorAll('.con2[data-con2-dynamic]');
-    existingCon2s.forEach(function(el) { el.remove(); });
-
-    // 템플릿 con2도 제거 (data-con2-dynamic 속성이 없는 원본)
-    if (!con2Template.hasAttribute('data-con2-dynamic')) {
-      con2Template.remove();
+    // 템플릿 HTML은 최초 1회만 캐싱한다.
+    // 프리뷰는 iframe을 리로드하지 않고 매핑만 다시 돌리므로, 매번 DOM에서 .con2를 다시 읽으면
+    //  (1) about이 비었던 렌더에서 원본을 지운 뒤엔 querySelector가 null이라 이후 백오피스에서
+    //      about 블록을 추가해도 영원히 안 그려지고
+    //  (2) 이미 롤링 중인 동적 con2의 중간 상태(translateX, 복제된 이미지)가 템플릿에 섞인다.
+    if (!this._con2TemplateHtml) {
+      var originTemplate = document.querySelector('.con2');
+      if (!originTemplate) return;
+      this._con2TemplateHtml = originTemplate.outerHTML;
     }
+    var templateHtml = this._con2TemplateHtml;
+
+    var con5 = document.querySelector('.con5');  // con5 위치 저장
+    var container = (con5 && con5.parentElement) || document.querySelector('.container');
+    if (!container) return;
+
+    // 진행 중인 롤링 루프 정리 (재렌더마다 rAF가 쌓이는 것 방지)
+    this.stopRolling();
+
+    // 기존 con2 전부 제거 (원본 템플릿 포함 - 위에서 캐싱해뒀으므로 안전)
+    document.querySelectorAll('.con2').forEach(function(el) { el.remove(); });
+
+    // about이 비어 있어도 섹션 자체는 남긴다 (index con2와 동일 정책: placeholder로 표시)
+    var items = aboutArray.length ? aboutArray : [null];
 
     // About 배열을 반복하면서 con2 동적 생성
-    aboutArray.forEach(function(aboutItem) {
+    items.forEach(function(aboutItem) {
       // 템플릿 복제
       var con2Clone = document.createElement('div');
       con2Clone.innerHTML = templateHtml;
@@ -156,8 +166,8 @@ var MainMapper = {
 
       // 타이틀 매핑
       var titleEl = con2.querySelector('.title');
-      if (titleEl && aboutItem.title) {
-        titleEl.textContent = aboutItem.title;
+      if (titleEl) {
+        titleEl.textContent = (aboutItem && aboutItem.title) || '';
       }
 
       // 태그 매핑 (hero.images[] description - 최대 3개, index con2와 동일 소스)
@@ -195,30 +205,29 @@ var MainMapper = {
       var imgRolling = con2.querySelector('.imgRolling');
       if (imgRolling) {
         imgRolling.innerHTML = '';
+        // 템플릿에 남아 있을 수 있는 이전 롤링 위치 제거 (재렌더 시 첫 프레임 튐 방지)
+        imgRolling.style.transform = 'translateX(0px)';
         var hasAnyImage = false;
 
-        if (aboutItem.images && aboutItem.images.length) {
-          aboutItem.images.forEach(function(img) {
-            if (img.url) {
-              hasAnyImage = true;
-              var imgDiv = document.createElement('div');
-              imgDiv.className = 'img';
-              imgDiv.style.backgroundImage = 'url(' + img.url + ')';
-              imgDiv.style.backgroundSize = 'cover';
-              imgDiv.style.backgroundPosition = 'center';
-              imgRolling.appendChild(imgDiv);
-            } else {
-              var imgDiv = document.createElement('div');
-              imgDiv.className = 'img';
-              ImageHelpers.applyBackgroundPlaceholder(imgDiv);
-              imgRolling.appendChild(imgDiv);
-            }
-          });
-        }
+        var aboutImages = (aboutItem && aboutItem.images) || [];
+        aboutImages.forEach(function(img) {
+          var imgDiv = document.createElement('div');
+          imgDiv.className = 'img';
+          if (img && img.url) {
+            hasAnyImage = true;
+            imgDiv.style.backgroundImage = 'url(' + img.url + ')';
+            imgDiv.style.backgroundSize = 'cover';
+            imgDiv.style.backgroundPosition = 'center';
+          } else {
+            ImageHelpers.applyBackgroundPlaceholder(imgDiv);
+          }
+          imgRolling.appendChild(imgDiv);
+        });
 
         // 이미지가 없으면 placeholder 4개 추가
         if (!hasAnyImage) {
-          for (var i = 0; i < 4; i++) {
+          imgRolling.innerHTML = '';
+          for (var j = 0; j < 4; j++) {
             var placeholderDiv = document.createElement('div');
             placeholderDiv.className = 'img';
             ImageHelpers.applyBackgroundPlaceholder(placeholderDiv);
@@ -232,13 +241,25 @@ var MainMapper = {
     this.initializeRolling();
   },
 
+  // 진행 중인 롤링 rAF 루프 취소
+  stopRolling: function() {
+    (this._rollHandles || []).forEach(function(handle) {
+      cancelAnimationFrame(handle);
+    });
+    this._rollHandles = [];
+  },
+
   // ImgRolling 초기화 함수
   initializeRolling: function() {
+    var self = this;
+    self._rollHandles = self._rollHandles || [];
+
     var con2List = document.querySelectorAll('.con2 .imgRolling');
 
     con2List.forEach(function(container) {
       // 이미지 복제
       var images = container.querySelectorAll('.img');
+      if (!images.length) return;
       images.forEach(function(img) {
         var clone = img.cloneNode(true);
         container.appendChild(clone);
@@ -248,17 +269,22 @@ var MainMapper = {
       var position = 0;
       var speed = 0.4;
       var totalWidth = container.scrollWidth;
+      var handleIndex = self._rollHandles.length;
+      self._rollHandles.push(0);
 
       function roll() {
+        // 재렌더 등으로 DOM에서 떨어져 나간 컨테이너는 루프를 끝낸다
+        if (!container.isConnected) return;
+
         position -= speed;
         if (Math.abs(position) >= totalWidth / 2) {
           position = 0;
         }
         container.style.transform = 'translateX(' + position + 'px)';
-        requestAnimationFrame(roll);
+        self._rollHandles[handleIndex] = requestAnimationFrame(roll);
       }
 
-      roll();
+      self._rollHandles[handleIndex] = requestAnimationFrame(roll);
     });
   },
 

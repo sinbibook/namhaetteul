@@ -44,9 +44,15 @@ var FacilityMapper = {
       selectedImages = facility.images.filter(function(img) { return img.isSelected; });
     }
 
-    // 선택된 이미지가 있으면 최대 3개 표시
+    // isSelected 가 하나도 없으면(시설정보엔 이미지별 선택 UI가 없다) 첨부된 전체를 쓴다
+    if (selectedImages.length === 0 && facility.images && facility.images.length > 0) {
+      selectedImages = facility.images;
+    }
+
+    // 히어로 슬라이더는 시설정보에 첨부된 이미지를 전부 노출한다.
+    // (조각컷 data-facility-image-0~2 만 기존대로 앞 3장을 쓴다)
     if (selectedImages.length > 0) {
-      selectedImages.slice(0, 3).forEach(function(img) {
+      selectedImages.forEach(function(img) {
         var slide = document.createElement('div');
         slide.className = 'swiper-slide';
 
@@ -85,17 +91,25 @@ var FacilityMapper = {
     // Swiper 초기화
     var con0Container = document.querySelector('.con0');
     if (con0Container) {
-      var con0Swiper = con0Container.swiper;
-      if (con0Swiper) {
-        con0Swiper.destroy();
+      var con0SwiperEl = con0Container.querySelector('.swiper-container');
+
+      // Swiper 인스턴스는 .con0 이 아니라 .swiper-container 에 붙는다.
+      // 예전엔 con0Container.swiper(항상 undefined)를 보느라 기존 인스턴스가 파괴되지 않아,
+      // 프리뷰 재렌더 때마다 같은 컨테이너에 인스턴스가 쌓이고 autoplay 가 서로 다른 주기로
+      // 겹쳐 돌면서 슬라이드 순서가 튀거나 되감기는 것처럼 보였다.
+      if (con0SwiperEl && con0SwiperEl.swiper) {
+        con0SwiperEl.swiper.destroy(true, true);
       }
 
-      new Swiper(con0Container.querySelector('.swiper-container'), {
+      // delay 는 header-footer-loader.reinitializeSwiper 의 con0 설정과 반드시 같아야 한다.
+      // 저기서 100ms 뒤 이 인스턴스를 파괴하고 다시 만들기 때문에, 값이 다르면
+      // 여기 설정은 무시되고 슬라이드 간격이 코드 의도와 다르게 동작한다.
+      new Swiper(con0SwiperEl, {
         slidesPerView: 1,
         loop: selectedImages.length > 1,
         effect: 'fade',
         autoplay: selectedImages.length > 1 ? {
-          delay: 4000,
+          delay: 2500,
           disableOnInteraction: false,
         } : false,
         navigation: {
