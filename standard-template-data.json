@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.78.0",
-    "generatedAt": "2026-09-11T10:27:05.923776327Z",
+    "version": "1.79.0",
+    "generatedAt": "2026-09-11T10:29:33.564124770Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -2040,9 +2040,18 @@
               "category": "roomtype_interior"
             },
             {
+              "id": "01a09003-e441-7b00-bd45-e8196dcd0c66",
+              "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/roomtype_interior/1789122568720-vx8b84jji7.jpg",
+              "sortOrder": 120,
+              "description": "",
+              "isSelected": true,
+              "blockId": "afac2276-a3b4-4c24-9001-f95e4101c80c",
+              "category": "roomtype_interior"
+            },
+            {
               "id": "0cb17a53-7191-43ac-b9c8-d02c897726f4",
               "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/roomtype_interior/1789108819256-mei4tvosnj.jpg",
-              "sortOrder": 120,
+              "sortOrder": 121,
               "description": "",
               "isSelected": true,
               "blockId": "afac2276-a3b4-4c24-9001-f95e4101c80c",
@@ -2051,7 +2060,7 @@
             {
               "id": "18a4e16d-1cf3-4acc-a7c9-2c2fe0064b96",
               "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/roomtype_interior/1789108819319-h33lt2nk7p.jpg",
-              "sortOrder": 121,
+              "sortOrder": 122,
               "description": "",
               "isSelected": true,
               "blockId": "afac2276-a3b4-4c24-9001-f95e4101c80c",
@@ -2060,7 +2069,7 @@
             {
               "id": "e7d39845-9831-4134-89a3-64d47b881c96",
               "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/roomtype_interior/1789112000624-3kxbw4ro6h.jpg",
-              "sortOrder": 122,
+              "sortOrder": 123,
               "description": "",
               "isSelected": true,
               "blockId": "afac2276-a3b4-4c24-9001-f95e4101c80c",
