@@ -600,7 +600,7 @@
   font-size: 45px;
   color: var(--color-secondary);
   font-family: var(--font-ko-main);
-  font-weight: bold;
+  font-weight: normal;
 }
 @media (max-width: 1440px) {
   .con7 .tx1 {
