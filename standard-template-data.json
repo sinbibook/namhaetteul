@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.100.0",
-    "generatedAt": "2026-09-14T01:09:40.498006779Z",
+    "version": "1.101.0",
+    "generatedAt": "2026-09-14T01:43:55.214399377Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -1429,7 +1429,7 @@
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_hero/1789125041004-sxz3s0ma4v.jpg",
                     "sortOrder": 5,
                     "description": "",
-                    "isSelected": true,
+                    "isSelected": false,
                     "blockId": null
                   },
                   {
@@ -1445,7 +1445,7 @@
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_hero/1789109714844-288hkl4ivp.jpg",
                     "sortOrder": 7,
                     "description": "#남해의 하루",
-                    "isSelected": true,
+                    "isSelected": false,
                     "blockId": null
                   },
                   {
@@ -1453,7 +1453,7 @@
                     "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/main_hero/1789109714842-r880jtu7p9.jpg",
                     "sortOrder": 8,
                     "description": "바다 곁 여유",
-                    "isSelected": true,
+                    "isSelected": false,
                     "blockId": null
                   },
                   {
