@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.113.0",
-    "generatedAt": "2026-09-14T07:23:03.265243423Z",
+    "version": "1.114.0",
+    "generatedAt": "2026-09-14T07:26:22.519712633Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -2665,6 +2665,21 @@
                   ],
                   "blockId": "1638634e-d39b-4bf8-ab0c-08b4ac5d39bd",
                   "description": "넓게 펼쳐진 갯벌에서 조개를 캐고 쏙을 잡는 어촌 체험장입니다. 마을 주민들이 잡는 방법을 직접 알려주고, 잡은 해산물을 그 자리에서 튀겨 맛볼 수 있습니다. 장갑과 장화, 호미는 현장에서 대여할 수 있어 몸만 가도 됩니다. 아이들과 함께하기 좋은 체험입니다."
+                },
+                {
+                  "title": "남해 물건리 방조어부림\n",
+                  "images": [
+                    {
+                      "id": "01a09ecf-4b04-7be8-88c4-9726ae745ac7",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370780061-j94qwrwfrr.jpg",
+                      "sortOrder": 7,
+                      "description": "차량 25분거리",
+                      "isSelected": true,
+                      "blockId": "e75afd75-3947-4a3b-a4bd-3a60c156e75d"
+                    }
+                  ],
+                  "blockId": "e75afd75-3947-4a3b-a4bd-3a60c156e75d",
+                  "description": "천연기념물로 지정된 400년 된 방풍림입니다. 팽나무, 푸조나무, 상수리나무 등 수십 종의 나무 만여 그루가 빽빽하게 어우러져 한여름에도 그늘이 깊고 시원합니다. 숲 앞은 모래가 아닌 몽돌 해변이라 파도가 드나들 때마다 자그락거리는 소리가 들립니다. 숲길을 따라 천천히 걷기 좋고, 바다와 숲이 맞닿은 풍경이 독특해 사진 찍기에도 좋습니다."
                 }
               ],
               "enabled": true
