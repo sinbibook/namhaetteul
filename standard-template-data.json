@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.107.0",
-    "generatedAt": "2026-09-14T07:06:24.930122340Z",
+    "version": "1.108.0",
+    "generatedAt": "2026-09-14T07:19:09.689194264Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -2548,7 +2548,16 @@
             {
               "hero": {
                 "title": "",
-                "images": [ ],
+                "images": [
+                  {
+                    "id": "01a09ec8-b1ba-79b2-8e1e-c7d7652a6590",
+                    "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_hero/1789370347483-vjoz2w9jlx.jpg",
+                    "sortOrder": 0,
+                    "description": "",
+                    "isSelected": true,
+                    "blockId": null
+                  }
+                ],
                 "description": ""
               },
               "about": [
@@ -2569,37 +2578,91 @@
                 },
                 {
                   "title": "설리 스카이워크",
-                  "images": [ ],
+                  "images": [
+                    {
+                      "id": "01a09ec8-b18b-77c2-a8dd-dbe6c22cc1c4",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347500-pu1dlw989d.jpg",
+                      "sortOrder": 6,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "a2fa3dcc-974f-4a11-9c33-941c61e50920"
+                    }
+                  ],
                   "blockId": "a2fa3dcc-974f-4a11-9c33-941c61e50920",
                   "description": "설리해변을 내려다보는 절벽 위 전망대입니다. 유리 바닥 구간을 걸으며 발밑으로 바다를 볼 수 있고, 바다를 향해 날아오르는 대형 그네가 이곳의 상징입니다. 전망대 안 카페에서 남해 바다를 바라보며 쉬어갈 수 있으며, 노을 무렵 풍경이 특히 아름답습니다."
                 },
                 {
                   "title": "송정 솔바람해변",
-                  "images": [ ],
+                  "images": [
+                    {
+                      "id": "01a09ec8-b1ce-7955-b1c6-8eab42ebef07",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347487-kvm6qju7n4.jpg",
+                      "sortOrder": 1,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "d586302e-674e-4eed-93ad-558c2c6cb0a1"
+                    }
+                  ],
                   "blockId": "d586302e-674e-4eed-93ad-558c2c6cb0a1",
                   "description": "백사장 뒤로 넓은 솔숲이 이어지는 해변입니다. 솔그늘 아래에서 여유롭게 쉬기 좋고, 주차장이 넓고 무료입니다. 화장실이 크고 2층에 샤워 시설이 갖춰져 있습니다. 안전 부표와 안전요원이 배치되어 아이들과 물놀이하기에 좋습니다."
                 },
                 {
                   "title": "상주은모래비치\n",
-                  "images": [ ],
+                  "images": [
+                    {
+                      "id": "01a09ec8-b1cc-728a-a402-0f947fe0ef3d",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347485-8vr11fu7j3.jpg",
+                      "sortOrder": 2,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "c95cbe99-0867-4ca2-b805-7db7926a9bd3"
+                    }
+                  ],
                   "blockId": "c95cbe99-0867-4ca2-b805-7db7926a9bd3",
                   "description": "남해를 대표하는 해수욕장입니다. 반달 모양으로 휘어진 백사장은 모래가 곱기로 이름나 있고, 수심이 완만해 가족 단위 피서객에게 인기가 많습니다. 해변을 따라 식당과 카페, 캠핑장이 늘어서 있어 하루를 온전히 보내기 좋습니다."
                 },
                 {
                   "title": "독일마을",
-                  "images": [ ],
+                  "images": [
+                    {
+                      "id": "01a09ec8-b11a-7d24-bd59-472202b82aba",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347483-1l0pj1f215.jpg",
+                      "sortOrder": 3,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "af6b2c4b-4a3e-41f5-bd6e-0e576dffa519"
+                    }
+                  ],
                   "blockId": "af6b2c4b-4a3e-41f5-bd6e-0e576dffa519",
                   "description": "파독 광부와 간호사들이 귀국해 정착하며 만들어진 마을입니다. 언덕을 따라 붉은 지붕의 독일식 주택이 늘어서 있고, 바다가 내려다보이는 카페와 독일식 소시지·맥주를 맛볼 수 있는 식당이 모여 있습니다. 마을은 입장료 없이 둘러볼 수 있으며, 매년 10월에는 옥토버페스트가 열립니다."
                 },
                 {
                   "title": "보리암",
-                  "images": [ ],
+                  "images": [
+                    {
+                      "id": "01a09ec8-b158-790c-a009-c0d35e555865",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347485-w3p5qb5r1i.jpg",
+                      "sortOrder": 5,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "99936ac5-3f57-4786-9310-11166e120650"
+                    }
+                  ],
                   "blockId": "99936ac5-3f57-4786-9310-11166e120650",
                   "description": "금산 정상 부근 바위 절벽에 자리한 암자로, 한 가지 소원은 꼭 이뤄준다는 기도처로 널리 알려져 있습니다. 암자에서 내려다보는 남해 바다와 기암 풍경이 절경이며, 가을 단풍철 풍경이 특히 아름답습니다. 복곡주차장에서 암자까지 이어지는 900m 산길도 걷는 맛이 좋습니다."
                 },
                 {
                   "title": "갯벌체험장(삼동면 둔촌·전도)\n",
-                  "images": [ ],
+                  "images": [
+                    {
+                      "id": "01a09ec8-b182-7e50-a8c0-fd03a8f3a58e",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347487-zs5y0jspjl.jpg",
+                      "sortOrder": 4,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "1638634e-d39b-4bf8-ab0c-08b4ac5d39bd"
+                    }
+                  ],
                   "blockId": "1638634e-d39b-4bf8-ab0c-08b4ac5d39bd",
                   "description": "넓게 펼쳐진 갯벌에서 조개를 캐고 쏙을 잡는 어촌 체험장입니다. 마을 주민들이 잡는 방법을 직접 알려주고, 잡은 해산물을 그 자리에서 튀겨 맛볼 수 있습니다. 장갑과 장화, 호미는 현장에서 대여할 수 있어 몸만 가도 됩니다. 아이들과 함께하기 좋은 체험입니다."
                 }
