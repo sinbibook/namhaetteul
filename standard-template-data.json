@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.105.0",
-    "generatedAt": "2026-09-14T06:28:07.296431117Z",
+    "version": "1.106.0",
+    "generatedAt": "2026-09-14T07:03:34.489218460Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -2551,8 +2551,24 @@
                 "images": [ ],
                 "description": ""
               },
-              "about": [ ],
-              "enabled": false
+              "about": [
+                {
+                  "title": "설리 해수욕장",
+                  "images": [
+                    {
+                      "id": "01a09eba-6ace-798d-a591-6dcb65974245",
+                      "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789369411235-2t1k86ge4y.jpg",
+                      "sortOrder": 0,
+                      "description": "",
+                      "isSelected": true,
+                      "blockId": "dce49081-3d37-461e-be32-d02786f3d19d"
+                    }
+                  ],
+                  "blockId": "dce49081-3d37-461e-be32-d02786f3d19d",
+                  "description": "미조면 남쪽 끝에 자리한 아담한 해변입니다. 물빛이 에메랄드처럼 맑아 제주 바다에 비견될 만큼 푸르고, 스노클링 장소로도 알음알음 알려져 있습니다. 한적하게 바다를 즐기기 좋은 곳입니다."
+                }
+              ],
+              "enabled": true
             }
           ]
         },
