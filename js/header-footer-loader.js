@@ -69,6 +69,7 @@ var HeaderFooterLoader = {
         if (typeof HeaderFooterMapper !== 'undefined') {
           HeaderFooterMapper.mapHeader(data);
           HeaderFooterMapper.mapFooter(data);
+          HeaderFooterMapper.mapConsult(data);
         }
 
         // enabled 필드 체크 (nearby-attractions, layout-map)
