@@ -181,7 +181,7 @@ var RoomMapper = {
     }
 
     // tx4: NOTICE — 하드코딩 (매핑 삭제)
-    // "※ 자세한 내용은 이용안내 페이지 참고 부탁드립니다." (room.html에 직접 작성)
+    // "※ 자세한 내용은 예약안내 페이지 참고 부탁드립니다." (room.html에 직접 작성)
 
     // 오른쪽 이미지 (con6 .right .img img) - roomtype interior[2] (3번째 이미지)
     var interior = this.getCategoryImages(rt, 'roomtype_interior');

@@ -442,6 +442,7 @@ class PreviewHandler {
             if (window.HeaderFooterMapper) {
                 HeaderFooterMapper.mapHeader(data);
                 HeaderFooterMapper.mapFooter(data);
+                HeaderFooterMapper.mapConsult(data);
             }
 
             setTimeout(() => {
