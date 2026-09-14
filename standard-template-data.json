@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.109.0",
-    "generatedAt": "2026-09-14T07:19:52.701090530Z",
+    "version": "1.110.0",
+    "generatedAt": "2026-09-14T07:21:33.140195272Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -2583,7 +2583,7 @@
                       "id": "01a09ec8-b18b-77c2-a8dd-dbe6c22cc1c4",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347500-pu1dlw989d.jpg",
                       "sortOrder": 1,
-                      "description": "",
+                      "description": "차량 3분거리",
                       "isSelected": true,
                       "blockId": "a2fa3dcc-974f-4a11-9c33-941c61e50920"
                     }
@@ -2598,7 +2598,7 @@
                       "id": "01a09ec8-b1ce-7955-b1c6-8eab42ebef07",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347487-kvm6qju7n4.jpg",
                       "sortOrder": 2,
-                      "description": "",
+                      "description": "차량 5분거리",
                       "isSelected": true,
                       "blockId": "d586302e-674e-4eed-93ad-558c2c6cb0a1"
                     }
@@ -2613,7 +2613,7 @@
                       "id": "01a09ec8-b1cc-728a-a402-0f947fe0ef3d",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347485-8vr11fu7j3.jpg",
                       "sortOrder": 3,
-                      "description": "",
+                      "description": "차량 7분거리",
                       "isSelected": true,
                       "blockId": "c95cbe99-0867-4ca2-b805-7db7926a9bd3"
                     }
@@ -2628,7 +2628,7 @@
                       "id": "01a09ec8-b11a-7d24-bd59-472202b82aba",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347483-1l0pj1f215.jpg",
                       "sortOrder": 4,
-                      "description": "",
+                      "description": "차량 20분거리",
                       "isSelected": true,
                       "blockId": "af6b2c4b-4a3e-41f5-bd6e-0e576dffa519"
                     }
@@ -2643,7 +2643,7 @@
                       "id": "01a09ec8-b158-790c-a009-c0d35e555865",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347485-w3p5qb5r1i.jpg",
                       "sortOrder": 5,
-                      "description": "",
+                      "description": "차량 25분거리",
                       "isSelected": true,
                       "blockId": "99936ac5-3f57-4786-9310-11166e120650"
                     }
@@ -2658,7 +2658,7 @@
                       "id": "01a09ec8-b182-7e50-a8c0-fd03a8f3a58e",
                       "url": "https://jlnjajtcnyqupfaqjerz.supabase.co/storage/v1/object/public/app-images/homepage/e61fd67d-cc16-4e4b-97b5-b3580725d0ee/nearby_attractions_about/1789370347487-zs5y0jspjl.jpg",
                       "sortOrder": 6,
-                      "description": "",
+                      "description": "차량 25분거리",
                       "isSelected": true,
                       "blockId": "1638634e-d39b-4bf8-ab0c-08b4ac5d39bd"
                     }
