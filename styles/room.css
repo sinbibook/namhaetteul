@@ -708,3 +708,20 @@
   font-size: 13px;
 }
 
+/* room_floorplan — 객실 평면도 (이미지 한 장만, 제목 없음)
+   ⚠️ 기본값이 `display:none` 이다 — 매퍼가 이미지를 찾았을 때만 풀어준다. */
+.room_floorplan {
+  padding: 90px 20px;
+  text-align: center;
+}
+.room_floorplan img {
+  display: inline-block;
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .room_floorplan {
+    padding: 50px 20px;
+  }
+}

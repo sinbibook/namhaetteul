@@ -17,14 +17,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="남해 뜰 풀빌라 펜션 - 객실안내" />
   <meta property="og:description" content="남해 바다 바로 앞에서 사계절 돔 수영장과 개별 풀장, 개별 바비큐를 즐길 수 있는 풀빌라입니다." />
-  
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/09/16/OZc726nDioNS.jpg" />
   <meta property="og:url" content="https://namhaetteul.kr" />
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="남해 뜰 풀빌라 펜션 - 객실안내" />
   <meta name="twitter:description" content="남해 바다 바로 앞에서 사계절 돔 수영장과 개별 풀장, 개별 바비큐를 즐길 수 있는 풀빌라입니다." />
-  
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2026/09/16/OZc726nDioNS.jpg" />
   <meta name="naver-site-verification" content="43fb15c021f351b224507f4ff76f79a6283d58ec" />
   <meta name="google-site-verification" content="HepZBJzBaVJZ291PvQ_Ba9J-WsYfNTTidGJb9pIynfQ" />
 </head>
@@ -138,6 +138,14 @@
             ></div>
           </div>
         </div>
+        <!-- s: 객실 평면도 — 원본 객실 상세의 평면도 크롤링 이미지가 있을 때만 노출.
+             제목 영역 없이 도면 이미지 한 장만 놓는다. 없으면 매퍼가 구간째 숨긴다. -->
+        <div class="room_floorplan" data-room-floorplan-section style="display: none">
+          <!-- data-* : data-room-floorplan-image
+               roomtypes[current] 평면도 이미지 → 없으면 섹션 미노출 -->
+          <img alt="객실 평면도" data-room-floorplan-image />
+        </div>
+        <!--// 객실 평면도 -->
         <!-- MAPPER: rooms[] (including current - thumbnail + name) -->
         <div class="con3">
           <div class="w1440">

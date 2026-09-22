@@ -334,8 +334,22 @@ var HeaderFooterMapper = {
     });
   },
 
+  // MAPPER: property.tripProviderName → [data-copyright]
+  // 공급사명이 있으면 data-copyright 의 템플릿 문자열에서 {provider} 를 치환한다.
+  // 값이 없으면(백오피스 미입력 → "") HTML 의 기존 트립일레븐 문구를 그대로 둔다.
+  mapCopyright: function(data) {
+    var provider = String(((data && data.property) || {}).tripProviderName || '').trim();
+    if (!provider) return;
+    document.querySelectorAll('[data-copyright]').forEach(function (el) {
+      var tpl = el.getAttribute('data-copyright') || '';
+      el.textContent = tpl.replace(/\{provider\}/g, provider);
+    });
+  },
+
   mapFooter: function(data) {
     if (!data || !data.property) return;
+
+    this.mapCopyright(data);
 
     var businessInfo = data.property.businessInfo || {};
     var phones = getPhoneListSafe(data.property.contactPhone);
