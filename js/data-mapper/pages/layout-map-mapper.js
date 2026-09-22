@@ -137,21 +137,18 @@ var LayoutMapMapper = {
       var matched = rooms.find(function(r) { return r.id === rt.id; });
       return !(matched && matched.status === 'inactive');
     });
-    var roomItems = BaseMapper.getRoomMenuItems(activeRoomtypes, function(rt) {
+    // Room Preview 카드는 groupName 과 무관하게 **항상 전체 객실**을 깐다.
+    // 그룹으로 접히는 곳은 헤더 ROOMS 메뉴와 객실 상세 탭뿐이고,
+    // 카드는 저마다 자기 객실 상세로 연결한다.
+    activeRoomtypes.forEach(function(rt) {
       var matched = rooms.find(function(r) { return r.id === rt.id; });
-      return (rt.name && rt.name.trim()) || (matched && matched.name) || '객실명';
-    });
-
-    roomItems.forEach(function(item) {
-      var rt = BaseMapper.getRoomMenuRoomtype(item);
-      var matched = rooms.find(function(r) { return r.id === rt.id; });
-      var roomName = BaseMapper.getRoomMenuLabel(item);
+      var roomName = (rt.name && rt.name.trim()) || (matched && matched.name) || '객실명';
 
       var slide = document.createElement('div');
       slide.className = 'swiper-slide';
 
       var link = document.createElement('a');
-      link.href = BaseMapper.getRoomMenuLink(item);
+      link.href = BaseMapper.getRoomMenuLink(rt);
 
       var imgDiv = document.createElement('div');
       imgDiv.className = 'img';

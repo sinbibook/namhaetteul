@@ -31,6 +31,9 @@ var RoomMapper = {
     // MAPPER: customFields.pages.room[current].sections[0].gallery.title (con7 tx2)
     this.mapCon7Text(data, rt);
 
+    // MAPPER: roomtypes[current] 평면도 이미지 (없으면 구간째 미노출)
+    this.mapFloorplan(rt);
+
     // MAPPER: 다른 객실 미리보기 (roomtypes[] thumbnail + name)
     this.mapRoomPreview(data);
 
@@ -83,6 +86,28 @@ var RoomMapper = {
   getCategoryImages: function(rt, category) {
     var imgs = (rt && rt.images) || [];
     return this.getSelectedImages(imgs.filter(function(im) { return im.category === category; }));
+  },
+
+  // 객실 평면도 소스.
+  // 크롤러가 원본 객실 상세의 평면도 영역에서 이미지를 찾았을 때만 이 필드/카테고리를 채운다.
+  // ⚠️ 제목·설명 자리가 없다. 도면 이미지 한 장이 전부다.
+  getFloorplanImages: function(rt) {
+    if (!rt) return [];
+
+    var direct = rt.floorplanImages || rt.floorplans || (rt.floorplan && rt.floorplan.images) || [];
+    if (direct && !Array.isArray(direct)) direct = [direct];
+
+    if (direct.length) {
+      var selectedDirect = this.getSelectedImages(direct);
+      return selectedDirect.length ? selectedDirect : direct;
+    }
+
+    var imgs = (rt && rt.images) || [];
+    var filtered = imgs.filter(function(im) {
+      return /^(roomtype_)?floorplan$|^room_floorplan$|^floor_plan$/i.test(im.category || '');
+    });
+    var selected = this.getSelectedImages(filtered);
+    return selected.length ? selected : filtered.slice();
   },
 
   // roomStructures[0] + "/ " + totalRoomCount 값≥1 항목 한글 나열
@@ -288,21 +313,18 @@ var RoomMapper = {
       var matched = rooms.find(function(r) { return r.id === rt.id; });
       return !(matched && matched.status === 'inactive');
     });
-    var roomItems = BaseMapper.getRoomMenuItems(activeRoomtypes, function(rt) {
+    // Room Preview 카드는 groupName 과 무관하게 **항상 전체 객실**을 깐다.
+    // 그룹으로 접히는 곳은 헤더 ROOMS 메뉴와 객실 상세 탭뿐이고,
+    // 카드는 저마다 자기 객실 상세로 연결한다.
+    activeRoomtypes.forEach(function(rt) {
       var matched = rooms.find(function(r) { return r.id === rt.id; });
-      return (rt.name && rt.name.trim()) || (matched && matched.name) || '객실명';
-    });
-
-    roomItems.forEach(function(item) {
-      var rt = BaseMapper.getRoomMenuRoomtype(item);
-      var matched = rooms.find(function(r) { return r.id === rt.id; });
-      var roomName = BaseMapper.getRoomMenuLabel(item);
+      var roomName = (rt.name && rt.name.trim()) || (matched && matched.name) || '객실명';
 
       var slide = document.createElement('div');
       slide.className = 'swiper-slide';
 
       var link = document.createElement('a');
-      link.href = BaseMapper.getRoomMenuLink(item);
+      link.href = BaseMapper.getRoomMenuLink(rt);
 
       var imgDiv = document.createElement('div');
       imgDiv.className = 'img';
@@ -389,6 +411,35 @@ var RoomMapper = {
       }
       li.appendChild(link);
       ul.appendChild(li);
+    });
+  },
+
+  /* MAPPER: roomtypes[current] 평면도 이미지 → [data-room-floorplan-image]
+     ⚠️ 제목·설명 자리가 없다. 도면 이미지 한 장이 전부다.
+     ⚠️ 이미지가 없으면 [data-room-floorplan-section] 을 통째로 숨긴다 —
+        원본에 없던 빈 구간을 남기지 않는다.
+        (layout-map 의 배치도는 반대로 없어도 placeholder 를 세운다 — 규칙이 정반대다.)
+     ⚠️ URL 이 있는데 로드가 죽어도 구간째 숨긴다 — 깨진 아이콘만 남는 것보다 낫다. */
+  mapFloorplan: function(rt) {
+    var sections = document.querySelectorAll('[data-room-floorplan-section]');
+    if (!sections.length) return;
+
+    var images = this.getFloorplanImages(rt);
+    var url = (images.length && images[0].url) || '';
+
+    sections.forEach(function(el) {
+      el.style.display = url ? '' : 'none';
+    });
+    if (!url) return;
+
+    document.querySelectorAll('[data-room-floorplan-image]').forEach(function(img) {
+      img.alt = '객실 평면도';
+      img.onerror = function() {
+        sections.forEach(function(el) {
+          el.style.display = 'none';
+        });
+      };
+      img.src = url;
     });
   }
 };

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.136.0",
-    "generatedAt": "2026-09-22T03:38:32.974049843Z",
+    "version": "1.137.0",
+    "generatedAt": "2026-09-22T03:59:11.306328726Z",
     "templateType": "trip_l",
     "propertyId": "06e799b7-acf2-4a1c-a1f7-3ae1760c67a6",
     "homepageId": "e61fd67d-cc16-4e4b-97b5-b3580725d0ee"
@@ -31,6 +31,7 @@
     "ybsId": "",
     "tripPropertyId": "13094",
     "partnerType": "distributor_b",
+    "tripProviderName": "트립일레븐",
     "amenities": [
       "흡연구역(지정장소)",
       "공용화장실",
@@ -640,8 +641,7 @@
         "surrounding": [ ],
         "commonArea": [ ]
       }
-    ],
-    "tripProviderName": "트립일레븐"
+    ]
   },
   "rooms": [
     {

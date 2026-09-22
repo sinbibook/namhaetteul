@@ -151,7 +151,10 @@ var FacilityMapper = {
         }
       }
 
-      var usageText = (heroTitle && heroTitle.trim()) ? heroTitle : (facility.usageGuide || '');
+      // 크롤로 들어온 시설 본문은 description 에 담긴다. usageGuide 만 보면
+      // 신규 시설은 빈칸이 되고, 블록 매칭 시설은 블록 content(이용안내 체크리스트)가
+      // 설명 자리에 나온다. description → usageGuide 순으로 본다 (D · D2 · F 와 동일).
+      var usageText = (heroTitle && heroTitle.trim()) ? heroTitle : (facility.description || facility.usageGuide || '');
       tx1El.innerHTML = usageText.replace(/\n/g, '<br>');
     }
 
